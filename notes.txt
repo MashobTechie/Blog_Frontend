@@ -1,3 +1,4 @@
+DAY 1 and 2
 JSX , Component and Props
 
 <!-- What is JSX -->
@@ -29,3 +30,5 @@ Clean default Vite code.
 Create a postList component: Create a new component called PostList.jsx. For now, just have it return a hardcoded list of div elements representing mock blog posts. 
 
 Next:useEffect hook(perfrom data fetching and display the actual blog from database)
+
+Day 3: 
