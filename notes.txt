@@ -1,0 +1,31 @@
+JSX , Component and Props
+
+<!-- What is JSX -->
+It stands for Javascript XML. 
+It is a syntax extension that allows us to write UI code that is both functional(JS) and familiar(HTML,CSS)
+
+JSX Rules: 
+1. return a single root element (wrap everything in a <div> or <>)
+2. Use className instead of class 
+3. Close all tags including self closing tag like <img>[ <img />], <br> [<br/>]
+4. Use curly braces {} to embed JS expressions
+
+Functional Components
+Components are simple JS functions that return JSX. 
+
+Props(Properties)
+Think of props as a way to pass data from a parent component to a child component. It's how we make our Components reusable and dynamic. 
+
+
+Introducing useState for Managing State:
+Problem: For example, if we want to show a counter that increments every time a button is clicked. Simply changing a variable wont work cos React wont know when to rerender(refresh) the UI.
+
+Solution: The useState hook. 
+The useState hook is a special function from React that lets us add a state variable to a functional component. When a state variable changes, React will automatically re-render the new value
+
+
+Assignment: 
+Clean default Vite code.
+Create a postList component: Create a new component called PostList.jsx. For now, just have it return a hardcoded list of div elements representing mock blog posts. 
+
+Next:useEffect hook(perfrom data fetching and display the actual blog from database)
