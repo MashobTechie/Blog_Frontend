@@ -29,6 +29,25 @@ Assignment:
 Clean default Vite code.
 Create a postList component: Create a new component called PostList.jsx. For now, just have it return a hardcoded list of div elements representing mock blog posts. 
 
-Next:useEffect hook(perfrom data fetching and display the actual blog from database)
+Next:useEffect hook(perform data fetching and display the actual blog from database)
 
 Day 3: 
+
+The Problem with API Calls: 
+If we put an API call directly into the component body, it runs every time the component re-renders (which is inefficient and ven wrong).
+We need a dedicated place for side effects . 
+
+Mastering UseEffect Hook:
+useEffect is React's hook for handling side effects which include data fetching , manual DOM Manipulation, setting up timers, counters etc. 
+
+The 3 modes of useEffect:
+1. No array ( Runs on Every Render): 
+useEffect(() => {...})
+2. Empty Array (Runs only once a mount):
+useEffect(() => {...}, [])
+This is what we use for fetching initial data. 
+3. With dependencies( Runs on Mount and when dependencies change): 
+useEffect(() => {...}, [someProp, someState]):
+{Used for refetching data when filters change etc}
+
+API_KEY: f9ec0bdf955b4cfba35038923fb7e416
